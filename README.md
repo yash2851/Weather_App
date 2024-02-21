@@ -4,13 +4,12 @@ A new Flutter project.
 
 ## Output
 
-![Screenshot_20240217_201509](https://github.com/yash2851/Weather_App/assets/130960433/08d83b6d-6e6d-4517-9447-c801539c1340)
-![Screenshot_20240217_201518](https://github.com/yash2851/Weather_App/assets/130960433/6d949d1e-02a8-44a3-ac02-1a9cf5007b2c)
-![Screenshot_20240217_201525](https://github.com/yash2851/Weather_App/assets/130960433/716587e3-03bc-466e-91bd-78d648e37998)
-![Screenshot_20240217_201536](https://github.com/yash2851/Weather_App/assets/130960433/0f0b4238-a2c0-44cb-b582-c4b4cf9537c5)
-![Screenshot_20240217_201621](https://github.com/yash2851/Weather_App/assets/130960433/7050c823-33eb-413a-9fa3-5fdb30103a0f)
+![Screenshot_20240221_172439](https://github.com/yash2851/Weather_App/assets/130960433/6223495e-a7a1-418c-90c9-ead830e980fd)
+![Screenshot_20240221_172456](https://github.com/yash2851/Weather_App/assets/130960433/858afe4b-7900-4cfe-b6cf-9acfee02c051)
+![Screenshot_20240221_172503](https://github.com/yash2851/Weather_App/assets/130960433/5ed700d7-9f1c-4340-af2f-7e24522a4479)
+![Screenshot_20240221_172718](https://github.com/yash2851/Weather_App/assets/130960433/6e38975c-ccda-4cd6-90bb-4f0600658fd5)
 
-https://github.com/yash2851/Weather_App/assets/130960433/aa34c065-b30f-4849-aec8-57ac54c0f2ab
+https://github.com/yash2851/Weather_App/assets/130960433/13ac3790-6fcd-4b6b-b9c9-f8aee58c8ba6
 
 This project is a starting point for a Flutter application.
 
