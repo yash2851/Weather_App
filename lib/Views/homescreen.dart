@@ -311,12 +311,12 @@ class _HomePageState extends State<HomePage> {
                                     children: [
                                       Icon(
                                         Icons.access_time_outlined,
-                                        color: Colors.white,
+                                        color: Colors.black,
                                       ),
                                       SizedBox(width: 10, height: 20),
                                       Text(
                                         "24 - Hour Forecast                                       >",
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(color: Colors.black),
                                       ),
                                     ],
                                   ),
@@ -325,22 +325,24 @@ class _HomePageState extends State<HomePage> {
                                     height: 150,
                                     child: ListView.separated(
                                       itemCount: 24,
-                                      scrollDirection: Axis.horizontal,
+                                      scrollDirection: Axis.vertical,
                                       separatorBuilder: (context, index) {
                                         return SizedBox(
-                                          width: 10,
+                                          height: 5,
                                         );
                                       },
                                       itemBuilder: (context, index) {
                                         return Container(
-                                          padding: EdgeInsets.all(10),
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(20),
-                                            color: Colors.blue.withOpacity(0.3),
-                                          ),
+                                          padding: EdgeInsets.all(5),
+                                          // decoration: BoxDecoration(
+                                          //   borderRadius:
+                                          //       BorderRadius.circular(20),
+                                          //   color: Colors.blue.withOpacity(0.3),
+                                          // ),
                                           height: 70,
-                                          child: Column(
+                                          child: Row(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
@@ -356,14 +358,14 @@ class _HomePageState extends State<HomePage> {
                                               ),
                                               Text(
                                                   "${wm?.timelines?.hourly![index].values!["temperatureApparent"]}º"),
-                                              Text(
-                                                  "${wm?.timelines?.hourly![index].values!["windSpeed"]}"),
-                                              Text(".km/h"),
                                               Image.asset(
                                                 "assets/images/mix.png",
                                                 height: 30,
                                                 width: 30,
                                               ),
+                                              Text(
+                                                  "${wm?.timelines?.hourly![index].values!["windSpeed"]}"),
+                                              Text(".km/h"),
                                             ],
                                           ),
                                         );
@@ -397,11 +399,11 @@ class _HomePageState extends State<HomePage> {
                                           borderRadius:
                                               BorderRadius.circular(20),
                                         ),
-                                        height: 170,
-                                        width: 170,
+                                        height: 100,
+                                        width: 360,
                                         child: Center(
                                           child: Text(
-                                            "💨 Wind Speed : \n       ${wm?.timelines!.daily![0].values!.windSpeedAvg}km/h",
+                                            "💨 Wind Speed :        ${wm?.timelines!.daily![0].values!.windSpeedAvg}km/h",
                                             style: TextStyle(
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.bold),
@@ -416,8 +418,8 @@ class _HomePageState extends State<HomePage> {
                                           borderRadius:
                                               BorderRadius.circular(20),
                                         ),
-                                        height: 170,
-                                        width: 170,
+                                        height: 120,
+                                        width: 360,
                                         child: Center(
                                             child: RichText(
                                           textAlign: TextAlign.center,
@@ -459,51 +461,51 @@ class _HomePageState extends State<HomePage> {
                                     ],
                                   ),
                                 ),
-                                Container(
-                                  height: 370,
-                                  margin: EdgeInsets.only(right: 10),
-                                  width:
-                                      (MediaQuery.of(context).size.width / 2) -
-                                          20,
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue.withOpacity(0.3),
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                  child: Column(
-                                    children: [
-                                      ListTile(
-                                        title: Text("Humidity"),
-                                        trailing: Text(
-                                            "${wm?.timelines!.daily![0].values!.humidityAvg}%"),
-                                      ),
-                                      ListTile(
-                                        title: Text("Rain Intensity"),
-                                        trailing: Text(
-                                            "${wm?.timelines!.daily![0].values!.rainIntensityAvg}"),
-                                      ),
-                                      ListTile(
-                                        title: Text("Weaker (UV)"),
-                                        trailing: Text(
-                                            "${wm?.timelines!.daily![0].values!.uvHealthConcernAvg}"),
-                                      ),
-                                      ListTile(
-                                        title: Text("Air Pressure"),
-                                        trailing: Text(
-                                            "${wm?.timelines!.daily![0].values!.pressureSurfaceLevelAvg}hPa"),
-                                      ),
-                                      ListTile(
-                                        title: Text("Chance of rain"),
-                                        trailing: Text(
-                                            "${wm?.timelines!.daily![0].values!.rainAccumulationLweMax} %"),
-                                      ),
-                                      ListTile(
-                                        title: Text("Feels like"),
-                                        trailing: Text(
-                                            " ${wm?.timelines!.daily![2].values!.temperatureMax}ºC"),
-                                      ),
-                                    ],
-                                  ),
-                                ),
+                                // Container(
+                                //   height: 370,
+                                //   margin: EdgeInsets.only(right: 10),
+                                //   width:
+                                //       (MediaQuery.of(context).size.width / 2) -
+                                //           20,
+                                //   decoration: BoxDecoration(
+                                //     color: Colors.blue.withOpacity(0.3),
+                                //     borderRadius: BorderRadius.circular(20),
+                                //   ),
+                                //   child: Column(
+                                //     children: [
+                                //       ListTile(
+                                //         title: Text("Humidity"),
+                                //         trailing: Text(
+                                //             "${wm?.timelines!.daily![0].values!.humidityAvg}%"),
+                                //       ),
+                                //       ListTile(
+                                //         title: Text("Rain Intensity"),
+                                //         trailing: Text(
+                                //             "${wm?.timelines!.daily![0].values!.rainIntensityAvg}"),
+                                //       ),
+                                //       ListTile(
+                                //         title: Text("Weaker (UV)"),
+                                //         trailing: Text(
+                                //             "${wm?.timelines!.daily![0].values!.uvHealthConcernAvg}"),
+                                //       ),
+                                //       ListTile(
+                                //         title: Text("Air Pressure"),
+                                //         trailing: Text(
+                                //             "${wm?.timelines!.daily![0].values!.pressureSurfaceLevelAvg}hPa"),
+                                //       ),
+                                //       ListTile(
+                                //         title: Text("Chance of rain"),
+                                //         trailing: Text(
+                                //             "${wm?.timelines!.daily![0].values!.rainAccumulationLweMax} %"),
+                                //       ),
+                                //       ListTile(
+                                //         title: Text("Feels like"),
+                                //         trailing: Text(
+                                //             " ${wm?.timelines!.daily![2].values!.temperatureMax}ºC"),
+                                //       ),
+                                //     ],
+                                //   ),
+                                // ),
                               ],
                             ),
                           ),
